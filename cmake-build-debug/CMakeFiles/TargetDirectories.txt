@@ -1,0 +1,5 @@
+/media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/cpp.dir
+/media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/cpp_autogen_timestamp_deps.dir
+/media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/cpp_autogen.dir
