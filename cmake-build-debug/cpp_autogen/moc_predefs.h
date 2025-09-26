@@ -12,7 +12,6 @@
 #define __SIZEOF_FLOAT80__ 16
 #define __INTMAX_C(c) c ## L
 #define __CHAR_BIT__ 8
-#define USE_DISTRIBUTED 1
 #define __UINT8_MAX__ 0xff
 #define __SCHAR_WIDTH__ 8
 #define __WINT_MAX__ 0xffffffffU
@@ -176,7 +175,6 @@
 #define __FLT_MIN_EXP__ (-125)
 #define __GCC_HAVE_DWARF2_CFI_ASM 1
 #define __x86_64 1
-#define USE_TENSORPIPE 1
 #define __cpp_lambdas 200907L
 #define __INT_FAST64_TYPE__ long int
 #define __FLT64_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F64
@@ -213,7 +211,6 @@
 #define __FLT32_MANT_DIG__ 24
 #define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
 #define SIZEOF_DPTR (sizeof(void*))
-#define USE_RPC 1
 #define __STDC_IEC_60559_COMPLEX__ 201404L
 #define __cpp_aggregate_bases 201603L
 #define __FLT128_HAS_DENORM__ 1
@@ -272,7 +269,6 @@
 #define __CHAR16_TYPE__ short unsigned int
 #define __PRAGMA_REDEFINE_EXTNAME 1
 #define __SIZE_WIDTH__ 64
-#define USE_C10D_NCCL 1
 #define __SEG_FS 1
 #define __INT_LEAST16_MAX__ 0x7fff
 #define __DEC64_MANT_DIG__ 16
@@ -286,7 +282,6 @@
 #define __cpp_structured_bindings 201606L
 #define __SIZEOF_INT__ 4
 #define __DEC32_MAX_EXP__ 97
-#define USE_C10D_GLOO 1
 #define __INT_FAST8_MAX__ 0x7f
 #define __FLT128_MAX__ 1.18973149535723176508575932662800702e+4932F128
 #define __INTPTR_MAX__ 0x7fffffffffffffffL

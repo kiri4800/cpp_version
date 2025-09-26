@@ -1,20 +1,41 @@
 /snap/clion/265/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/265/bin/ninja/linux/x64/ninja -G Ninja -S /media/kiri4800/LOLKEK/cpp -B /media/kiri4800/LOLKEK/cpp/cmake-build-debug
--- Found CUDAToolkit: /usr/local/cuda-12.6/include (found version "12.6.20") 
-CMake Error at CMakeLists.txt:35 (find_package):
-  By not providing "FindTorch.cmake" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by "Torch", but
-  CMake did not find one.
+-- CUDA include dir: /usr/local/cuda-12.8/include
+-- CUDA library dir: /usr/local/cuda-12.8/lib64
+-- Found CUDA: /usr/local/cuda (found version "12.8") 
+-- Found CUDAToolkit: /usr/local/cuda-12.8/include (found version "12.8.61") 
+-- PyTorch: CUDA detected: 12.8
+-- PyTorch: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+-- PyTorch: CUDA toolkit directory: /usr/local/cuda
+-- PyTorch: Header version is: 12.8
+CMake Warning at /usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:140 (message):
+  Failed to compute shorthash for libnvrtc.so
+Call Stack (most recent call first):
+  /usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:57 (find_package)
 
-  Could not find a package configuration file provided by "Torch" with any of
-  the following names:
 
-    TorchConfig.cmake
-    torch-config.cmake
+-- USE_CUDNN is set to 0. Compiling without cuDNN support
+-- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
+-- USE_CUDSS is set to 0. Compiling without cuDSS support
+-- USE_CUFILE is set to 0. Compiling without cuFile support
+CMake Error in /media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeLists.txt:
+  CUDA_ARCHITECTURES is empty for target "cmTC_913e6".
 
-  Add the installation prefix of "Torch" to CMAKE_PREFIX_PATH or set
-  "Torch_DIR" to a directory containing one of the above files.  If "Torch"
-  provides a separate development package or SDK, be sure it has been
-  installed.
+
+CMake Error in /media/kiri4800/LOLKEK/cpp/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeLists.txt:
+  CUDA_ARCHITECTURES is empty for target "cmTC_913e6".
+
+
+CMake Error at /usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run):
+  Failed to generate test project build system.
+Call Stack (most recent call first):
+  /usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)
+  /usr/local/libtorch/share/cmake/Caffe2/public/utils.cmake:344 (cuda_select_nvcc_arch_flags)
+  /usr/local/libtorch/share/cmake/Caffe2/public/cuda.cmake:314 (torch_cuda_get_nvcc_gencode_flag)
+  /usr/local/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /usr/local/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:57 (find_package)
 
 
 -- Configuring incomplete, errors occurred!

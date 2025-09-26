@@ -2,38 +2,18 @@ cpp_autogen/timestamp: \
   /home/kiri4800/OpenCVConfig-version.cmake \
   /home/kiri4800/OpenCVConfig.cmake \
   /home/kiri4800/OpenCVModules.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Caffe2Config.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/CMakeInitializeConfigs.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageHandleStandardArgs.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageMessage.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/public/cuda.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/public/mkl.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/public/mkldnn.cmake \
-  /home/kiri4800/libtorch/share/cmake/Caffe2/public/utils.cmake \
-  /home/kiri4800/libtorch/share/cmake/Torch/TorchConfig.cmake \
-  /home/kiri4800/libtorch/share/cmake/Torch/TorchConfigVersion.cmake \
   /media/kiri4800/LOLKEK/cpp/CMakeLists.txt \
   /media/kiri4800/LOLKEK/cpp/FullScreen/FullScreen.cpp \
   /media/kiri4800/LOLKEK/cpp/FullScreen/FullScreen.h \
   /media/kiri4800/LOLKEK/cpp/Model/Model.cpp \
   /media/kiri4800/LOLKEK/cpp/Model/Model.h \
   CMakeFiles/3.27.8/CMakeCCompiler.cmake \
-  CMakeFiles/3.27.8/CMakeCUDACompiler.cmake \
   CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.8/CMakeSystem.cmake \
   cpp_autogen/moc_predefs.h \
-  detect_cuda_compute_capabilities.cu \
-  detect_cuda_version.cc \
   /media/kiri4800/LOLKEK/cpp/main.cpp \
   /snap/clion/265/bin/cmake/linux/x64/bin/cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake \
-  /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCUDAInformation.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
@@ -53,15 +33,11 @@ cpp_autogen/timestamp: \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake \
-  /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-CUDA.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FeatureSummary.cmake \
-  /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindCUDAToolkit.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake \
-  /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPython.cmake \
-  /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPython/Support.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindThreads.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindVulkan.cmake \
   /snap/clion/265/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
