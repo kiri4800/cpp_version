@@ -4,7 +4,7 @@
 
 #ifndef CPP_MODEL_H
 #define CPP_MODEL_H
-#include <torch/script.h>
+//#include <torch/script.h>
 #include <opencv2/opencv.hpp>
 #include <iostream>
 class Model {
@@ -13,7 +13,7 @@ public :
     void test(const std::string& pathToImage);
 
 private:
-    torch::jit::script::Module module;
+//    torch::jit::script::Module module;
 };
 
 

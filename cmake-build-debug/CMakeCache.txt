@@ -31,7 +31,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CUDA compiler
-CMAKE_CUDA_COMPILER:STRING=/usr/local/cuda-12.6/bin/nvcc
+CMAKE_CUDA_COMPILER:STRING=/usr/local/cuda-12.8/bin/nvcc
 
 //Flags used by the CUDA compiler during all build types.
 CMAKE_CUDA_FLAGS:STRING=
@@ -282,6 +282,12 @@ CUDA_HOST_COMPILATION_CPP:BOOL=ON
 //Host side compiler used by NVCC
 CUDA_HOST_COMPILER:FILEPATH=/usr/bin/cc
 
+//Path to a file.
+CUDA_INCLUDE_DIR:PATH=/usr/local/cuda-12.8/include
+
+//Path to a library.
+CUDA_LIB:FILEPATH=/usr/local/cuda-12.8/lib64/libcudart.so
+
 //Path to a program.
 CUDA_NVCC_EXECUTABLE:FILEPATH=/usr/local/cuda/bin/nvcc
 
@@ -332,7 +338,7 @@ CUDA_TOOLKIT_ROOT_DIR:PATH=/usr/local/cuda
 CUDA_VERBOSE_BUILD:BOOL=OFF
 
 //Version of CUDA as computed from nvcc.
-CUDA_VERSION:STRING=12.6
+CUDA_VERSION:STRING=12.8
 
 //Path to a library.
 CUDA_cuFile_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcufile.so
@@ -392,7 +398,7 @@ CUDA_cufftw_static_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcufftw_static.a
 CUDA_culibos_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libculibos.a
 
 //"cupti" library
-CUDA_cupti_LIBRARY:FILEPATH=/usr/local/cuda-12.6/lib64/libcupti.so
+CUDA_cupti_LIBRARY:FILEPATH=/usr/local/cuda-12.8/lib64/libcupti.so
 
 //Path to a library.
 CUDA_cupti_static_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcupti_static.a
@@ -545,7 +551,10 @@ CUDA_nvrtc_static_LIBRARY:FILEPATH=/usr/local/cuda-12.6/lib64/libnvrtc_static.a
 CUDA_pcsamplingutil_LIBRARY:FILEPATH=/usr/local/cuda-12.6/lib64/libpcsamplingutil.so
 
 //The directory containing a CMake configuration file for Caffe2.
-Caffe2_DIR:PATH=/home/kiri4800/libtorch/share/cmake/Caffe2
+Caffe2_DIR:PATH=/usr/local/libtorch/share/cmake/Caffe2
+
+//The directory containing a CMake configuration file for LibTorch.
+LibTorch_DIR:PATH=LibTorch_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for MKLDNN.
 MKLDNN_DIR:PATH=MKLDNN_DIR-NOTFOUND
@@ -636,7 +645,7 @@ Qt6_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6
 TORCH_LIBRARY:FILEPATH=/home/kiri4800/libtorch/lib/libtorch.so
 
 //The directory containing a CMake configuration file for Torch.
-Torch_DIR:PATH=Torch_DIR-NOTFOUND
+Torch_DIR:PATH=/usr/local/libtorch/share/cmake/Torch
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
@@ -862,8 +871,6 @@ CUDA_CUDART_LIBRARY-ADVANCED:INTERNAL=1
 CUDA_CUDA_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_GENERATED_OUTPUT_DIR
 CUDA_GENERATED_OUTPUT_DIR-ADVANCED:INTERNAL=1
-//Returned GPU architectures from detect_gpus tool
-CUDA_GPU_DETECT_OUTPUT:INTERNAL=8.9
 //ADVANCED property for variable: CUDA_HOST_COMPILATION_CPP
 CUDA_HOST_COMPILATION_CPP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_NVCC_FLAGS
@@ -960,7 +967,7 @@ CUDA_cusparse_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_cusparse_static_LIBRARY
 CUDA_cusparse_static_LIBRARY-ADVANCED:INTERNAL=1
 //Location of make2cmake.cmake
-CUDA_make2cmake:INTERNAL=/home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/make2cmake.cmake
+CUDA_make2cmake:INTERNAL=/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/make2cmake.cmake
 //ADVANCED property for variable: CUDA_nppc_LIBRARY
 CUDA_nppc_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_nppc_static_LIBRARY
@@ -1042,15 +1049,15 @@ CUDA_nvrtc_builtins_static_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_nvrtc_static_LIBRARY
 CUDA_nvrtc_static_LIBRARY-ADVANCED:INTERNAL=1
 //Location of parse_cubin.cmake
-CUDA_parse_cubin:INTERNAL=/home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/parse_cubin.cmake
+CUDA_parse_cubin:INTERNAL=/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/parse_cubin.cmake
 //ADVANCED property for variable: CUDA_pcsamplingutil_LIBRARY
 CUDA_pcsamplingutil_LIBRARY-ADVANCED:INTERNAL=1
 //Location of run_nvcc.cmake
-CUDA_run_nvcc:INTERNAL=/home/kiri4800/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/run_nvcc.cmake
+CUDA_run_nvcc:INTERNAL=/usr/local/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/run_nvcc.cmake
 //Details about finding CUDA
-FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/usr/local/cuda][/usr/local/cuda/bin/nvcc][/usr/local/cuda/include][/usr/local/cuda/lib64/libcudart.so][v12.6()]
+FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/usr/local/cuda][/usr/local/cuda/bin/nvcc][/usr/local/cuda/include][/usr/local/cuda/lib64/libcudart.so][v12.8()]
 //Details about finding CUDAToolkit
-FIND_PACKAGE_MESSAGE_DETAILS_CUDAToolkit:INTERNAL=[/usr/local/cuda-12.6/include][/usr/local/cuda/lib64/libcudart.so][/usr/local/cuda-12.6/bin][v12.6.20()]
+FIND_PACKAGE_MESSAGE_DETAILS_CUDAToolkit:INTERNAL=[/usr/local/cuda-12.8/include][12.8.61][/usr/local/cuda/lib64/libcudart.so][/usr/local/cuda-12.6/bin][v12.8.61()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/home/kiri4800][v4.10.0()]
 //Details about finding OpenGL
@@ -1854,7 +1861,7 @@ _Python_NumPy_REASON_FAILURE:INTERNAL=
 __pkg_config_arguments_PKG_XKB:INTERNAL=QUIET;xkbcommon
 __pkg_config_checked_PKG_XKB:INTERNAL=1
 //Result of TRY_COMPILE
-compile_result:INTERNAL=TRUE
+compile_result:INTERNAL=FALSE
 //ADVANCED property for variable: pkgcfg_lib_PKG_XKB_xkbcommon
 pkgcfg_lib_PKG_XKB_xkbcommon-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
